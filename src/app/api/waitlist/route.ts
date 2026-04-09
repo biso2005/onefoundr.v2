@@ -13,15 +13,12 @@ export async function POST(req: NextRequest) {
       )
     }
 
-    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
-    const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+    const supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+    )
 
-    if (!supabaseUrl || !supabaseAnonKey) {
-      console.error('Missing Supabase env vars')
-      return NextResponse.json({ error: 'Server misconfigured' }, { status: 500 })
-    }
-
-    const supabase = createClient(supabaseUrl, supabaseAnonKey)
+    const resend = new Resend(process.env.RESEND_API_KEY!)
 
     // Save to Supabase
     const { error: dbError } = await supabase
@@ -38,15 +35,12 @@ export async function POST(req: NextRequest) {
       throw dbError
     }
 
-    // Send confirmation email if API key provided
-    const resendKey = process.env.RESEND_API_KEY
-    if (resendKey) {
-      const resend = new Resend(resendKey)
-      await resend.emails.send({
-        from: 'OneFoundr <hello@onefoundr.com>',
-        to: email,
-        subject: "You're on the OneFoundr waitlist 🎉",
-        html: `
+    // Send confirmation email
+    await resend.emails.send({
+      from: 'OneFoundr <hello@onefoundr.com>',
+      to: email,
+      subject: "You're on the OneFoundr waitlist 🎉",
+      html: `
         <div style="font-family: sans-serif; max-width: 480px; margin: 0 auto; padding: 40px 20px; background: #0D0D0D; color: #FFFFFF;">
           <h1 style="font-size: 24px; font-weight: 700; margin-bottom: 16px;">
             You're in. 🎉
@@ -64,10 +58,7 @@ export async function POST(req: NextRequest) {
           </p>
         </div>
       `,
-      })
-    } else {
-      console.warn('RESEND_API_KEY not set; skipping confirmation email')
-    }
+    })
 
     return NextResponse.json({ success: true }, { status: 200 })
   } catch (err) {

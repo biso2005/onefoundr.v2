@@ -18,7 +18,7 @@ export default function Button({
 
   const variants = {
     primary:
-      'bg-amber-400 text-black font-semibold hover:bg-amber-300 active:scale-95 w-full py-4',
+      'bg-accent text-background hover:bg-amber-400 active:scale-95',
     ghost:
       'border border-border text-muted hover:text-foreground hover:border-muted',
   }

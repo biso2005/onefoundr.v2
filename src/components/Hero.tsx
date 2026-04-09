@@ -1,12 +1,12 @@
 'use client'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import WaitlistForm from './WaitlistForm'
 
 export default function Hero() {
   const [count, setCount] = useState(847)
 
   return (
-    <section className="min-h-[80vh] flex flex-col items-center justify-center text-center px-6 pt-24 pb-16">
+    <section className="min-h-screen flex flex-col items-center justify-center text-center px-6 pt-24 pb-16">
       
       {/* Ambient glow */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-accent/5 rounded-full blur-3xl pointer-events-none" />

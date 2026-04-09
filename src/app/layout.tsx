@@ -1,13 +1,8 @@
-import type { Metadata, Viewport } from 'next'
+import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import { Analytics } from '@vercel/analytics/react'
 import './globals.css'
-
-export const viewport: Viewport = {
-  width: 'device-width',
-  initialScale: 1,
-}
 
 export const metadata: Metadata = {
   title: 'OneFoundr — The Operating System for Solo Founders',
