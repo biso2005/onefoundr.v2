@@ -21,14 +21,14 @@ const features = [
 
 export default function Solution() {
   return (
-    <section className="py-24 px-6 border-t border-border">
+    <section className="py-24 px-6 border-t border-white/10">
       <div className="max-w-5xl mx-auto">
 
         <div className="text-center mb-16">
           <p className="text-accent text-sm font-medium uppercase tracking-widest mb-4">
             The Solution
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-center">
             Built for the way
             <br />
             solo founders actually work.

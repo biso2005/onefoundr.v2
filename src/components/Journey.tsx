@@ -27,14 +27,14 @@ const stages = [
 
 export default function Journey() {
   return (
-    <section className="py-24 px-6 border-t border-border">
+    <section className="py-24 px-6 border-t border-white/10">
       <div className="max-w-5xl mx-auto">
 
         <div className="text-center mb-16">
           <p className="text-sage text-sm font-medium uppercase tracking-widest mb-4">
             The Journey
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-center">
             We don't serve a demographic.
             <br />
             <span className="text-muted font-normal">
