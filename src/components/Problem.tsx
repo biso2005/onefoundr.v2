@@ -25,7 +25,7 @@ export default function Problem() {
       <div className="max-w-5xl mx-auto">
 
         <div className="flex flex-col items-center text-center mb-16">
-          <h2 className="w-full text-3xl md:text-5xl font-bold tracking-tight text-center mb-4">
+          <h2 className="section-heading text-3xl md:text-5xl font-bold tracking-tight mb-4">
             The solo founder experience
             <br />
             <span className="text-muted font-normal">

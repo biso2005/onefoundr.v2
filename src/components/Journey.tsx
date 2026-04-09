@@ -34,7 +34,7 @@ export default function Journey() {
           <p className="text-sage text-sm font-medium uppercase tracking-widest mb-4">
             The Journey
           </p>
-          <h2 className="w-full text-3xl md:text-5xl font-bold tracking-tight text-center">
+          <h2 className="section-heading text-3xl md:text-5xl font-bold tracking-tight">
             We don't serve a demographic.
             <br />
             <span className="text-muted font-normal">
