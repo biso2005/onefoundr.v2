@@ -25,7 +25,7 @@ export default function Footer() {
             Privacy
           </a>
           <a
-            href="https://twitter.com/onefoundr"
+            href="https://x.com/onefoundr"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white/40 hover:text-white transition-colors duration-200"
@@ -33,7 +33,7 @@ export default function Footer() {
             Twitter
           </a>
           <a
-            href="https://linkedin.com/company/onefoundr"
+            href="https://www.linkedin.com/in/one-foundr-6301833b9/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white/40 hover:text-white transition-colors duration-200"
