@@ -21,7 +21,7 @@ const problems = [
 
 export default function Problem() {
   return (
-    <section className="py-24 px-6 border-t border-white/10">
+    <section className="mt-24 py-24 px-6 border-t border-white/10">
       <div className="max-w-5xl mx-auto">
 
         <div className="flex flex-col items-center text-center mb-16">
@@ -38,7 +38,7 @@ export default function Problem() {
           {problems.map((p) => (
             <div
               key={p.title}
-              className="p-6 rounded-2xl border border-border bg-card flex flex-col gap-4 hover:border-accent/30 transition-colors duration-300"
+              className="p-8 rounded-2xl bg-white/5 border border-white/10 flex flex-col gap-4"
             >
               <span className="text-3xl">{p.icon}</span>
               <h3 className="text-lg font-semibold">{p.title}</h3>

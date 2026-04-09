@@ -39,7 +39,7 @@ export default function Solution() {
           {features.map((f, i) => (
             <div
               key={f.label}
-              className="flex flex-col md:flex-row md:items-center gap-6 p-8 rounded-2xl border border-border bg-card hover:border-accent/30 transition-colors duration-300"
+              className="p-8 rounded-2xl bg-white/5 border border-white/10 flex flex-col gap-4"
             >
               <div className="md:w-1/4">
                 <span className="text-xs font-medium uppercase tracking-widest text-accent">

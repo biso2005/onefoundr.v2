@@ -47,7 +47,7 @@ export default function Journey() {
           {stages.map((s) => (
             <div
               key={s.stage}
-              className={`p-8 rounded-2xl border ${s.color} bg-card flex flex-col gap-4`}
+              className="p-8 rounded-2xl bg-white/5 border border-white/10 flex flex-col gap-4"
             >
               <div className="flex items-center gap-2">
                 <span className={`w-2 h-2 rounded-full ${s.dot}`} />
