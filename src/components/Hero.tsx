@@ -41,14 +41,19 @@ export default function Hero() {
 
         {/* Social proof */}
         <div className="flex items-center gap-2 text-muted text-sm">
-          <div className="flex -space-x-2">
-            {[...Array(5)].map((_, i) => (
-              <div
+          <div className="flex -space-x-3">
+            {[
+              'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face',
+              'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face',
+              'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face',
+              'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face',
+              'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face',
+            ].map((src, i) => (
+              <img
                 key={i}
-                className="w-7 h-7 rounded-full border-2 border-background bg-card"
-                style={{
-                  background: `hsl(${i * 40 + 20}, 60%, 40%)`,
-                }}
+                src={src}
+                alt="Founder"
+                className="w-9 h-9 rounded-full border-2 border-background object-cover"
               />
             ))}
           </div>
