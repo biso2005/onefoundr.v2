@@ -43,16 +43,31 @@ export default function Hero() {
         <div className="flex items-center gap-2 text-muted text-sm">
           <div className="flex -space-x-3">
             {[
-              'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face',
-              'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face',
-              'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face',
-              'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face',
-              'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face',
-            ].map((src, i) => (
+              {
+                url: 'https://images.pexels.com/photos/30004323/pexels-photo-30004323.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
+                name: 'Founder 1',
+              },
+              {
+                url: 'https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
+                name: 'Founder 2',
+              },
+              {
+                url: 'https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
+                name: 'Founder 3',
+              },
+              {
+                url: 'https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
+                name: 'Founder 4',
+              },
+              {
+                url: 'https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
+                name: 'Founder 5',
+              },
+            ].map((avatar, i) => (
               <img
                 key={i}
-                src={src}
-                alt="Founder"
+                src={avatar.url}
+                alt={avatar.name}
                 className="w-9 h-9 rounded-full border-2 border-background object-cover"
               />
             ))}
