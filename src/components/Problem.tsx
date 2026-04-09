@@ -1,18 +1,20 @@
+import { Ghost, Flame, VolumeX } from 'lucide-react'
+
 const problems = [
   {
-    icon: '🌀',
+    icon: <Ghost className="w-8 h-8 text-white/40" />,
     title: 'The Loneliness',
     description:
       'No co-founder to vent to. No team to validate ideas with. Just you and the silence.',
   },
   {
-    icon: '💀',
+    icon: <Flame className="w-8 h-8 text-amber-400" />,
     title: 'The Burnout',
     description:
       'Wearing every hat. Sales, product, support, finance — all before lunch.',
   },
   {
-    icon: '🔇',
+    icon: <VolumeX className="w-8 h-8 text-white/40" />,
     title: 'The Noise',
     description:
       'Endless advice built for funded startups with teams. None of it fits your reality.',

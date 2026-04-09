@@ -84,6 +84,11 @@ section.pt-40 > div {
   margin-right: auto;
 }
 
+/* Ensure in-page anchors don't hide behind fixed navbar */
+section {
+  scroll-margin-top: 80px;
+}
+
 ::-webkit-scrollbar {
   width: 4px;
 }
