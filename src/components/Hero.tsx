@@ -20,20 +20,19 @@ export default function Hero() {
 
         {/* Headline */}
         <h1 className="text-5xl md:text-7xl font-bold leading-[1.05] tracking-tight">
-          You're building alone.
+          Every major decision you've made this year —
           <br />
           <span className="text-accent">
-            That doesn't mean
+            you made alone.
           </span>
-          <br />
-          you're on your own.
         </h1>
 
         {/* Subline */}
         <p className="text-muted text-lg md:text-xl max-w-xl leading-relaxed">
-          OneFoundr is the operating system for solo founders —
-          peer accountability, AI-powered feedback, and a community
-          that actually gets your stage.
+          That's not a discipline problem. It's a structural one.
+          <br />
+          <br />
+          OneFoundr puts the right people and the right system around your thinking — so the decisions that have been sitting in your head for weeks get made clearly, confidently, and with people who actually understand your context.
         </p>
 
         {/* Waitlist Form */}

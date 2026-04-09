@@ -3,13 +3,13 @@ const features = [
     label: 'Peer Pods',
     title: 'Stage-matched. Accountable. Real.',
     description:
-      'Small groups of 4-5 founders at your exact stage. Weekly check-ins. Honest feedback. No cheerleading.',
+      'A small group of founders at your exact stage. Weekly check-ins. Honest feedback. No cheerleading.',
   },
   {
     label: 'AI Layer',
     title: 'Feedback that knows your business.',
     description:
-      'Not generic AI. Context-aware intelligence that understands where you are and what you actually need to hear.',
+      'AI focused on four functions: ask better questions; surface patterns; summarize weekly activity; suggest micro-experiments.',
   },
   {
     label: 'The Journey',

@@ -12,7 +12,7 @@ const steps = [
     number: '02',
     title: 'Get matched to your Pod',
     description:
-      'We match you with 4-5 founders at your exact stage. Not random. Stage-matched, goal-aligned, and ready to show up weekly.',
+      'We match you with 6-8 founders at your exact stage. Not random. Stage-matched, goal-aligned, and ready to show up weekly.',
   },
   {
     number: '03',
@@ -120,7 +120,7 @@ export default function HowItWorks() {
             </span>
           </h2>
           <p className="page-center text-white/50 text-lg max-w-xl leading-relaxed">
-            4-5 founders. Same stage. Weekly commitment. One AI layer sitting
+            6-8 founders. Same stage. Weekly commitment. One AI layer sitting
             at the center connecting every insight, every pattern, every
             breakthrough.
           </p>
@@ -133,8 +133,8 @@ export default function HowItWorks() {
             </div>
 
             {/* Founder nodes */}
-            {[0, 1, 2, 3].map((i) => {
-              const angle = (i * 360) / 4
+            {[0, 1, 2, 3, 4, 5].map((i) => {
+              const angle = (i * 360) / 6
               const rad = (angle * Math.PI) / 180
               const x = 50 + 38 * Math.cos(rad)
               const y = 50 + 38 * Math.sin(rad)

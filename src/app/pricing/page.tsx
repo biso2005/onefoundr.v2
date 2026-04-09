@@ -23,9 +23,9 @@ const tiers = [
     description: 'For solo founders in the messy middle who need real support.',
     features: [
       'Everything in Free',
-      'Pod matching — stage-relevant peer group',
+      'Pod matching — pods of 6-8 founders',
       'Weekly accountability check-ins',
-      'AI-powered feedback on your business',
+      'AI focused on four functions: ask better questions; surface patterns; summarize weekly activity; suggest micro-experiments',
       'Founder progress tracking',
       'Private pod communication channel',
     ],

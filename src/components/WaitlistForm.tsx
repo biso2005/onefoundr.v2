@@ -79,8 +79,12 @@ export default function WaitlistForm() {
       </select>
 
       <Button type="submit" disabled={status === 'loading'}>
-        {status === 'loading' ? 'Joining...' : 'Join the Waitlist →'}
+        {status === 'loading' ? 'Joining...' : 'Join the Waitlist'}
       </Button>
+
+      <p className="text-muted text-xs text-center mt-2">
+        First cohort is limited to 200 founding members.
+      </p>
 
       {status === 'error' && (
         <p className="text-red-400 text-xs text-center">{message}</p>
