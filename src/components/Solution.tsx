@@ -28,7 +28,7 @@ export default function Solution() {
           <p className="text-accent text-sm font-medium uppercase tracking-widest mb-4">
             The Solution
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-center">
+          <h2 className="w-full text-3xl md:text-5xl font-bold tracking-tight text-center">
             Built for the way
             <br />
             solo founders actually work.
