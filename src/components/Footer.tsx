@@ -1,24 +1,47 @@
 export default function Footer() {
   return (
-    <footer className="py-12 px-6 border-t border-border">
-      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-        <span className="text-foreground font-semibold tracking-tight">
-          One<span className="text-accent">Foundr</span>
+    <footer className="py-12 px-6 border-t border-white/5">
+      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+
+        <span className="text-white font-bold tracking-tight text-lg">
+          One<span className="text-amber-400">Foundr</span>
         </span>
-        <p className="text-muted text-sm">
+
+        <p className="text-white/30 text-sm">
           © 2025 OneFoundr. Built for the ones building alone.
         </p>
-        <div className="flex items-center gap-6 text-muted text-sm">
-          <a href="#" className="hover:text-foreground transition-colors">
-            Twitter
-          </a>
-          <a href="#" className="hover:text-foreground transition-colors">
-            LinkedIn
-          </a>
-          <a href="mailto:hello@onefoundr.com" className="hover:text-foreground transition-colors">
+
+        <div className="flex items-center gap-6 text-sm">
+          <a
+            href="/contact"
+            className="text-white/40 hover:text-white transition-colors duration-200"
+          >
             Contact
           </a>
+          <a
+            href="/privacy"
+            className="text-white/40 hover:text-white transition-colors duration-200"
+          >
+            Privacy
+          </a>
+          <a
+            href="https://twitter.com/onefoundr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/40 hover:text-white transition-colors duration-200"
+          >
+            Twitter
+          </a>
+          <a
+            href="https://linkedin.com/company/onefoundr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/40 hover:text-white transition-colors duration-200"
+          >
+            LinkedIn
+          </a>
         </div>
+
       </div>
     </footer>
   )
