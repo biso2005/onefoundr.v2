@@ -27,7 +27,7 @@ const stages = [
 
 export default function Journey() {
   return (
-    <section className="py-24 px-6 border-t border-white/10">
+    <section className="py-32 px-6 border-t border-white/10">
       <div className="max-w-5xl mx-auto">
 
         <div className="flex flex-col items-center text-center mb-16">
