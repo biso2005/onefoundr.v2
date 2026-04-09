@@ -34,7 +34,7 @@ export default function Problem() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mx-auto">
           {problems.map((p) => (
             <div
               key={p.title}
