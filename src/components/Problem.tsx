@@ -34,11 +34,11 @@ export default function Problem() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
           {problems.map((p) => (
             <div
               key={p.title}
-              className="p-6 rounded-2xl border border-border bg-card flex flex-col gap-4 hover:border-accent/30 transition-colors duration-300"
+              className="p-8 rounded-2xl bg-white/5 border border-white/10 flex flex-col gap-4"
             >
               <span className="text-3xl">{p.icon}</span>
               <h3 className="text-lg font-semibold">{p.title}</h3>
