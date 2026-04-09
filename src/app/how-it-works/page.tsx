@@ -68,14 +68,14 @@ export default function HowItWorks() {
           <p className="text-amber-400 text-sm font-medium uppercase tracking-widest">
             How It Works
           </p>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+          <h1 className="section-heading text-4xl md:text-6xl font-bold tracking-tight">
             Simple process.
             <br />
             <span className="text-white/40 font-normal">
               Serious results.
             </span>
           </h1>
-          <p className="text-white/50 text-lg max-w-xl leading-relaxed">
+          <p className="page-center text-white/50 text-lg max-w-xl leading-relaxed">
             OneFoundr is not a content library you forget about. It is a
             structured system that shows up with you every single week.
           </p>
@@ -112,14 +112,14 @@ export default function HowItWorks() {
           <p className="text-amber-400 text-sm font-medium uppercase tracking-widest">
             The Pod
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
+          <h2 className="section-heading text-3xl md:text-5xl font-bold tracking-tight">
             Small group.
             <br />
             <span className="text-white/40 font-normal">
               Massive accountability.
             </span>
           </h2>
-          <p className="text-white/50 text-lg max-w-xl leading-relaxed">
+          <p className="page-center text-white/50 text-lg max-w-xl leading-relaxed">
             4-5 founders. Same stage. Weekly commitment. One AI layer sitting
             at the center connecting every insight, every pattern, every
             breakthrough.
@@ -156,7 +156,7 @@ export default function HowItWorks() {
       <section className="py-24 px-6 border-t border-white/5">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+            <h2 className="section-heading text-3xl md:text-4xl font-bold tracking-tight">
               Common questions
             </h2>
           </div>
@@ -177,10 +177,10 @@ export default function HowItWorks() {
       {/* CTA */}
       <section className="py-24 px-6 border-t border-white/5 text-center">
         <div className="max-w-xl mx-auto flex flex-col items-center gap-6">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+          <h2 className="section-heading text-3xl md:text-4xl font-bold tracking-tight">
             Ready to stop building alone?
           </h2>
-          <p className="text-white/50 leading-relaxed">
+          <p className="page-center text-white/50 leading-relaxed">
             Join the waitlist. Be first in when we open founding member access.
           </p>
           <a

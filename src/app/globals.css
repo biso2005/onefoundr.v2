@@ -57,7 +57,29 @@ body {
 }
 
 /* Ensure section containers are centered (fallback for margin-inline issue) */
-section > .max-w-5xl {
+section > .max-w-5xl,
+section > .max-w-3xl,
+section > .max-w-2xl,
+section > .max-w-xl,
+div > .max-w-3xl,
+div > .max-w-2xl,
+div > .max-w-xl {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Page-level text centering — bypasses Tailwind layer specificity issues */
+.page-center {
+  text-align: center;
+  width: 100%;
+}
+
+/* Hero section centering */
+section.pt-40 {
+  text-align: center;
+}
+
+section.pt-40 > div {
   margin-left: auto;
   margin-right: auto;
 }

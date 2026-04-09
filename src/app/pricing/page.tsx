@@ -62,14 +62,14 @@ export default function Pricing() {
           <p className="text-amber-400 text-sm font-medium uppercase tracking-widest">
             Pricing
           </p>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+          <h1 className="section-heading text-4xl md:text-6xl font-bold tracking-tight">
             Invest in yourself.
             <br />
             <span className="text-white/40 font-normal">
               Not another subscription you ignore.
             </span>
           </h1>
-          <p className="text-white/50 text-lg max-w-xl leading-relaxed">
+          <p className="page-center text-white/50 text-lg max-w-xl leading-relaxed">
             OneFoundr is priced for real solo founders — not venture-backed
             teams with expense accounts. Founding members lock in these rates
             permanently.
@@ -151,10 +151,10 @@ export default function Pricing() {
       {/* CTA */}
       <section className="py-24 px-6 border-t border-white/5 text-center">
         <div className="max-w-xl mx-auto flex flex-col items-center gap-6">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+          <h2 className="section-heading text-3xl md:text-4xl font-bold tracking-tight">
             Lock in your founding rate.
           </h2>
-          <p className="text-white/50 leading-relaxed">
+          <p className="page-center text-white/50 leading-relaxed">
             Join the waitlist today. First access. Permanent founding pricing.
           </p>
           <a

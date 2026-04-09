@@ -35,7 +35,7 @@ export default function About() {
           <p className="text-amber-400 text-sm font-medium uppercase tracking-widest">
             About
           </p>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+          <h1 className="section-heading text-4xl md:text-6xl font-bold tracking-tight">
             Built by a solo founder.
             <br />
             <span className="text-white/40 font-normal">
@@ -93,12 +93,12 @@ export default function About() {
           <p className="text-amber-400 text-sm font-medium uppercase tracking-widest">
             The Mission
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
+          <h2 className="section-heading text-3xl md:text-5xl font-bold tracking-tight">
             Own the solo founder
             <br />
             journey. End to end.
           </h2>
-          <p className="text-white/50 text-lg max-w-xl leading-relaxed">
+          <p className="page-center text-white/50 text-lg max-w-xl leading-relaxed">
             The way YC owns startup culture. The way Stripe owns payments. We
             are building the defining platform for one-person companies —
             from the first side hustle to the first million.
@@ -110,7 +110,7 @@ export default function About() {
       <section className="py-24 px-6 border-t border-white/5">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+            <h2 className="section-heading text-3xl md:text-4xl font-bold tracking-tight">
               What we believe
             </h2>
           </div>
@@ -135,7 +135,7 @@ export default function About() {
       {/* Vision */}
       <section className="py-24 px-6 border-t border-white/5">
         <div className="max-w-2xl mx-auto text-center flex flex-col items-center gap-6">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+          <h2 className="section-heading text-3xl md:text-4xl font-bold tracking-tight">
             Where we're going
           </h2>
           <p className="text-white/50 text-lg leading-relaxed">
@@ -152,10 +152,10 @@ export default function About() {
       {/* CTA */}
       <section className="py-24 px-6 border-t border-white/5 text-center">
         <div className="max-w-xl mx-auto flex flex-col items-center gap-6">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+          <h2 className="section-heading text-3xl md:text-4xl font-bold tracking-tight">
             Be part of what's coming.
           </h2>
-          <p className="text-white/50 leading-relaxed">
+          <p className="page-center text-white/50 leading-relaxed">
             Join the waitlist. First access. Founding member pricing. Locked in.
           </p>
           <a
