@@ -24,8 +24,8 @@ export default function Problem() {
     <section className="py-24 px-6 border-t border-white/10">
       <div className="max-w-5xl mx-auto">
 
-        <div className="text-center mb-16">
-          <h2 className="w-full text-3xl md:text-5xl font-bold tracking-tight text-center mb-4">
+        <div className="flex flex-col items-center text-center mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-center mb-4">
             The solo founder experience
             <br />
             <span className="text-muted font-normal">
