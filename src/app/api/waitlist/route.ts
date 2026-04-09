@@ -5,6 +5,7 @@ import { Resend } from 'resend'
 export async function POST(req: NextRequest) {
   try {
     const { email, stage } = await req.json()
+    console.log('Received:', { email, stage })
 
     if (!email || !stage) {
       return NextResponse.json(
@@ -26,6 +27,7 @@ export async function POST(req: NextRequest) {
       .insert([{ email, stage, created_at: new Date().toISOString() }])
 
     if (dbError) {
+      console.log('Supabase error:', dbError)
       if (dbError.code === '23505') {
         return NextResponse.json(
           { error: 'You are already on the waitlist.' },
@@ -34,6 +36,8 @@ export async function POST(req: NextRequest) {
       }
       throw dbError
     }
+
+    console.log('DB insert successful')
 
     // Send confirmation email
     await resend.emails.send({
@@ -60,9 +64,11 @@ export async function POST(req: NextRequest) {
       `,
     })
 
+    console.log('Email sent')
+
     return NextResponse.json({ success: true }, { status: 200 })
   } catch (err) {
-    console.error(err)
+    console.error('Full error:', err)
     return NextResponse.json(
       { error: 'Internal server error.' },
       { status: 500 }
